@@ -1,0 +1,45 @@
+import java.util.ArrayList;
+import java.util.List;
+
+public class Cliente {
+    private String nome;
+    private String cpf;
+    private List<Ingresso> ingressos;
+
+    // Construtor Padrão
+    public Cliente() {
+        this.ingressos = new ArrayList<>();
+    }
+
+    // Construtor com Parâmetros
+    public Cliente(String nome, String cpf, List<Ingresso> ingressos) {
+        this.nome = nome;
+        this.cpf = cpf;
+        this.ingressos = (ingressos != null) ? ingressos : new ArrayList<>();
+    }
+
+    // Getters e Setters
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public String getCpf() {
+        return cpf;
+    }
+
+    public void setCpf(String cpf) {
+        this.cpf = cpf;
+    }
+
+    public List<Ingresso> getIngressos() {
+        return ingressos;
+    }
+
+    public void setIngressos(List<Ingresso> ingressos) {
+        this.ingressos = ingressos;
+    }
+}
