@@ -1,3 +1,6 @@
+package model;
+import enums.TipoIngresso;
+
 public class Ingresso {
     private int numero;
     private TipoIngresso tipo;
@@ -5,11 +8,9 @@ public class Ingresso {
     private Cliente cliente;
     private Funcionario funcionario;
 
-    // Construtor Padrão
     public Ingresso() {
     }
 
-    // Construtor com Parâmetros
     public Ingresso(int numero, TipoIngresso tipo, Sessao sessao, Cliente cliente, Funcionario funcionario) {
         this.numero = numero;
         this.tipo = tipo;
@@ -18,7 +19,6 @@ public class Ingresso {
         this.funcionario = funcionario;
     }
 
-    // Getters e Setters
     public int getNumero() {
         return numero;
     }

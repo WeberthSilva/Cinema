@@ -1,3 +1,5 @@
+package model;
+
 import java.time.LocalDate;
 import java.time.LocalTime;
 import java.util.ArrayList;
@@ -11,12 +13,12 @@ public class Sessao {
     private Filme filme;
     private List<Ingresso> ingressos;
 
-    // Construtor Padrão
+
     public Sessao() {
         this.ingressos = new ArrayList<>();
     }
 
-    // Construtor com Parâmetros
+
     public Sessao(LocalDate data, LocalTime horario, boolean encerrada, Sala sala, Filme filme, List<Ingresso> ingressos) {
         this.data = data;
         this.horario = horario;
@@ -26,7 +28,7 @@ public class Sessao {
         this.ingressos = (ingressos != null) ? ingressos : new ArrayList<>();
     }
 
-    // Getters e Setters
+
     public LocalDate getData() {
         return data;
     }

@@ -1,3 +1,5 @@
+package model;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -6,19 +8,19 @@ public class Cinema {
     private String endereco;
     private List<Sala> salas;
 
-    // Construtor Padrão
+
     public Cinema() {
         this.salas = new ArrayList<>();
     }
 
-    // Construtor com Parâmetros
+
     public Cinema(String nome, String endereco, List<Sala> salas) {
         this.nome = nome;
         this.endereco = endereco;
         this.salas = (salas != null) ? salas : new ArrayList<>();
     }
 
-    // Getters e Setters
+
     public String getNome() {
         return nome;
     }

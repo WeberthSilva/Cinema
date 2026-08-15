@@ -1,3 +1,5 @@
+package model;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -6,19 +8,18 @@ public class Funcionario {
     private String nome;
     private List<Ingresso> ingressos;
 
-    // Construtor Padrão
+
     public Funcionario() {
         this.ingressos = new ArrayList<>();
     }
 
-    // Construtor com Parâmetros
+
     public Funcionario(int id, String nome, List<Ingresso> ingressos) {
         this.id = id;
         this.nome = nome;
         this.ingressos = (ingressos != null) ? ingressos : new ArrayList<>();
     }
 
-    // Getters e Setters
     public int getId() {
         return id;
     }
